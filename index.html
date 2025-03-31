@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Firebase</title>
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: blue;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-width:bold;
+}
+
+h2{
+    text-decoration: inline;
+    color: blue;
+    
+}
+
+nav ul {
+    background: #333;
+    color: #fff;
+    list-style: none;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background:blue ;
+    color: #fff;
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Veille: FIREBASE</h1>
+        <p>Découvrez les fonctionnalités et avantages de Firebase pour le développement web et mobile.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduction"> •Introduction</a></li><br>
+            <li><a href="#chapitre1">1 : Présentation de Firebase</a></li><br>
+            <li><a href="#chapitre2">2 : Authentification avec Firebase</a></li><br>
+            <li><a href="#chapitre3">3 : Base de données en temps réel</a></li><br>
+            <li><a href="#chapitre4">4 : Hébergement avec Firebase</a></li><br>
+            <li><a href="#Conclusion">5 : Conclusion</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <hr>
+            <p>Cette formation vous guidera à travers les principales fonctionnalités de Firebase, une plateforme de développement d'applications mobiles et web proposée par Google.</p>
+            <img src="firebase-logo.jpg" alt="Logo Firebase">
+        </section>
+        <section>
+        <h2>Définition de Firebase</h2>
+          <hr>
+            <p>Firebase est une plateforme Backend-as-a-Service (BaaS) qui fournit aux développeurs des outils et services pour créer des applications web et mobiles robustes sans avoir à gérer l'infrastructure serveur. Elle inclut des fonctionnalités comme l'authentification, la base de données en temps réel, le stockage cloud, les notifications push et bien plus.</p></section>
+        
+        <section id="chapitre1">
+            <h2>1 : Présentation de Firebase</h2>
+              <hr>
+            <p>Firebase est une plateforme de développement d'applications mobiles et web proposée par Google. Elle offre une gamme de services tels que l'authentification, les bases de données en temps réel, le stockage et l'hébergement, facilitant le développement d'applications robustes et évolutives.</p>
+            <p>Par exemple, avec Firebase, vous pouvez :</p>
+            <ul>
+                <li>Gérer l'authentification des utilisateurs sans avoir à implémenter un backend complexe.</li>
+                <li>Stocker et synchroniser des données en temps réel entre vos utilisateurs.</li>
+                <li>Héberger votre application web avec un déploiement simple et rapide.</li>
+            </ul>
+            <img src="features.jpg" alt="Fonctionnalités de Firebase">
+        </section>
+        <section id="chapitre2">
+            <h2>2 : Authentification avec Firebase</h2>
+              <hr>
+            <p>Firebase Authentication permet d'ajouter facilement des systèmes d'authentification sécurisés à votre application, prenant en charge divers fournisseurs tels que Google, Facebook et email/mot de passe.</p>
+            <p>Par exemple, pour intégrer l'authentification par email/mot de passe dans une application web, vous pouvez suivre les étapes suivantes :</p>
+            <ol>
+                <li>Configurer Firebase Authentication dans la console Firebase en activant le fournisseur "Email/Mot de passe".</li>
+                <li>Ajouter le SDK Firebase à votre projet web.</li>
+                <li>Utiliser les méthodes `createUserWithEmailAndPassword` et `signInWithEmailAndPassword` pour gérer l'inscription et la connexion des utilisateurs.</li>
+            </ol>
+            <img src="firebase-authentication.jpg" alt="Authentification Firebase">
+        </section>
+        <section id="chapitre3">
+            <h2>3 : Base de données en temps réel</h2>
+              <hr>
+            <p>La base de données en temps réel de Firebase permet de stocker et synchroniser des données entre vos utilisateurs en temps réel, offrant une expérience utilisateur fluide et réactive.</p>
+            <p>Par exemple, pour créer une application de chat en temps réel, vous pouvez :</p>
+            <ul>
+                <li>Configurer une base de données en temps réel dans la console Firebase.</li>
+                <li>Définir les règles de sécurité pour contrôler l'accès aux données.</li>
+                <li>Utiliser le SDK Firebase pour écouter les modifications de la base de données et mettre à jour l'interface utilisateur en conséquence.</li>
+            </ul>
+            <img src="firebase-realtime-database.jpg" alt="Base de données en temps réel Firebase">
+        </section>
+        <section id="chapitre4">
+            <h2>4 : Hébergement avec Firebase</h2>
+              <hr>
+            <p>Firebase Hosting offre un hébergement web rapide et sécurisé pour vos applications web, avec un déploiement en une seule commande et un support pour le contenu statique et dynamique.</p>
+            <p>Par exemple, pour déployer une application web avec Firebase Hosting, vous pouvez :</p>
+            <ol>
+                <li>Installer l'interface de ligne de commande Firebase.</li>
+                <li>Initialiser votre projet Firebase dans le répertoire de votre application.</li>
+                <li>Déployer votre application en utilisant la commande `firebase deploy`.</li>
+            </ol>
+            <img src="firebase-hosting.jpg" alt="Hébergement Firebase">
+        </section>
+        
+          <section id="Conclusion">
+            <h2>5 : Conclusion</h2>
+              <hr>
+            <p>Firebase est une plateforme puissante et facile à utiliser qui simplifie grandement le développement d'applications web et mobiles. Grâce à ses nombreux services intégrés, tels que l'authentification, la base de données en temps réel et l'hébergement, il permet aux développeurs de gagner du temps et de se concentrer sur l'expérience utilisateur plutôt que sur l'infrastructure.</p>
+            <p>Son intégration rapide et sa flexibilité en font une solution idéale aussi bien pour les débutants que pour les développeurs expérimentés. Que vous construisiez une petite application personnelle ou une grande plateforme, Firebase vous offre les outils nécessaires pour réussir.</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Formation Firebase. Groupe A.</p>
+    </footer>
+</body>
+</html>
